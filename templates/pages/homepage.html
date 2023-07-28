@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{%block page_title%} Anasayfa {%endblock%}
+
+{%block content%}
+    <h1>Mülakat Oluşturma Sayfası</h1>
+    <button id="yeniSoruBtn">Yeni Soru Ekle</button>
+    <div id="soruFormAlani">
+        <label for="exam-name">Mülakat Adı</label>
+        <input type="text" name="exam-name" id="exam-name" class="form-control">
+        <label for="exam-desc">Mülakat Açıklaması</label>
+        <textarea class="form-control" name="exam-desc" id="exam-desc" cols="30" rows="10"></textarea>
+        <!-- Buraya dinamik olarak oluşturulan sorular eklenecek -->
+    </div>
+    <button class="mt-3 btn btn-success" id="formuGonder">Mülakatı Oluştur</button>
+
+{%endblock%}
